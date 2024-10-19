@@ -14,6 +14,10 @@ Transmitir os dados coletados para</li>
   </ul>
   <h1>Escolha da câmera</h1>
   <h2>Comparação de câmeras</h2>
+  <h2>Documentação da câmera escolhida</h2>
   <h1>Definição do ambiente controlado</h1>
   <h1>Definição dos objetos</h1>
+  <h1>Parâmetros de distância</h1>
   <h1>Modelo computacional</h1>
+  <h1>Diagram de blocos</h1>
+  
