@@ -6,7 +6,6 @@ Este projeto visa implementar um sistema de detecção de obstáculos utilizando
 A escolha do ESP32-CAM se justifica por suas características técnicas que o tornam ideal para aplicações de IoT, como a integração de sensores, conectividade Wi-Fi e processamento de dados. A câmera integrada, por sua vez, possibilita a aquisição de imagens em alta resolução, permitindo a extração de informações relevantes para a detecção e classificação de objetos. </p>
 <h1>Objetivos</h1>
   <ul>
-  <li>Teste</li> 
   <li>Desenvolver um sistema de visão computacional baseado em ESP32-CAM capaz de detectar e identificar objetos em um ambiente controlado.</li>
   <li>Classificar os objetos detectados em categorias de distância, utilizando técnicas de aprendizado de máquina.
 Transmitir os dados coletados para</li>
