@@ -156,7 +156,7 @@ Foram analisadas diversas opções de câmeras compatíveis com o ESP32-CAM.
     O modelo AI-THINKER inclui a câmera OV2640. </p>
 
   <h2>Documentação da câmera escolhida</h2>
-  <a href="OV2640DS.pdf" download>Baixar Manual do OV2640</a>
+  <a href="OV2640DS.pdf" download>Baixar Datasheet da OV2640</a>
   <h1>Definição do ambiente controlado</h1>
   <h1>Definição dos objetos</h1>
   <h1>Parâmetros de distância</h1>
