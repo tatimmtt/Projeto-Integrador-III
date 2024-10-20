@@ -8,11 +8,12 @@ A escolha do ESP32-CAM se justifica por suas características técnicas que o to
   <ul>
   <li>Desenvolver um sistema de visão computacional baseado em ESP32-CAM capaz de detectar e identificar objetos em um ambiente controlado.</li>
   <li>Classificar os objetos detectados em categorias de distância, utilizando técnicas de aprendizado de máquina.
-Transmitir os dados coletados para</li>
+Transmitir os dados coletados para um ESP32s3 realizar ações.</li>
   <li>Implementar algoritmos de processamento de imagem para extrair características do objeto</li >
   <li>Transmitir os dados coletados para um sistema externo, possibilitando a análise e o controle de processos.</li>
   </ul>
   <h1>Escolha da câmera</h1>
+  <p></p>
   <h2>Comparação de câmeras</h2>
   <h2>Documentação da câmera escolhida</h2>
   <h1>Definição do ambiente controlado</h1>
