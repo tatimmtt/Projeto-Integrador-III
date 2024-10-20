@@ -18,16 +18,135 @@ A escolha do ESP32-CAM se justifica por suas características técnicas que o to
   <li>A câmera deve ser pequena para que seja possível aclopar no robo, posteriormente</li>
   <li>Deve ter documentação disponível para acesso, de como adquirir o stream de vídeo</li>
   <li>Deve ser possível após adquirir o stream de vídeo, coletar as informações para o código em python gerar a visão computacional em cima da imagem capturada.</li>
-  </ul></p>
+  </ul>
+  </p>
   <p>A escolha da câmera leva em consideração de que forma o stream de vídeo será adquirido, e como a imagem será tratada com visão computacional para realizar a identificação de objetos e identificar parâmetros de distância as opções que foram levadas em consideração foram
   <ul>
   <li>Câmera ip convencional: para realizar a integração com uma câmera ip tradicional é necessário ter conhecimento da api, a documentação deve estar disponível e a câmera deve ser leve e pequena de uma forma que seja possível aclopar ao robo em futuros projetos</li>
   </ul>
   </p>
   <h2>Comparação de câmeras</h2>
-  <table><tr><td>Modelo da câmera</td><td>AI-THINKER</td><td>FREENOVE WROVER</td><td>ESP-EYE</td><td>M5-CAMERA A/B</td><td>TTGO T-Plus</td><td>TTGO T-Camera
-</td><td>T-Journal</td><td>M5 ESP32-Camera</td></tr>
-  <tr><td>l2c1</td></tr></table>
+  <table>
+  <tr><th>Modelo da câmera</th>
+  <td>AI-THINKER</td>
+  <td>FREENOVE WROVER</td>
+  <td>ESP-EYE</td>
+  <td>M5-CAMERA A/B</td>
+  <td>TTGO T-Plus</td>
+  <td>TTGO T-Camera</td>
+  <td>T-Journal</td>
+<td>M5 ESP32-Camera</td>
+</tr>
+  <tr>
+  <th>PSRAM</th>
+  <td>4MB</td>
+  <td>4MB</td>
+  <td>8MB</td>
+  <td>4MB</td>
+  <td>8MB</td>
+  <td>8MB</td>
+  <td>x</td>
+  <td>x</td>
+  </tr>
+  <tr>
+  <th>Screen</th>
+  <td>x</td>
+  <td>x</td>
+  <td>x</td>
+  <td>x</td>
+  <td>1.3inch TFT display (ST7789)</td>
+  <td>0.96inch SSD1306 OLED</td>
+  <td>0.91inch SSD1306 OLED</td>
+  <td>x</td>
+  </tr>
+  <tr>
+  <th>MicroSD Card</th>
+  <td>✓</td>
+  <td>✓</td>
+  <td>x</td>
+  <td>x</td>
+  <td>✓</td>
+  <td>x</td>
+  <td>x</td>
+  <td>x</td>
+  </tr>
+  <th>Microphone</th>
+    <td>x</td>
+    <td>x</td>
+    <td>✓</td>
+    <td>✓ (add-on)</td>
+    <td>✓</td>
+    <td>x</td>
+    <td>x</td>
+    <td>✓ (add-on)</td>
+  </tr>
+  <tr>
+    <th>Function button</th>
+    <td>x</td>
+    <td>x</td>
+    <td>✓</td>
+    <td>x</td>
+    <td>x</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+  </tr>
+  <tr>
+    <th>Battery Connector</th>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+  </tr>
+  <tr>
+    <th>Built-in programmer</th>
+    <td>x</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+  </tr>
+  <tr>
+    <th>GPIOs</th>
+    <td>10</td>
+    <td>30</td>
+    <td>x</td>
+    <td>x</td>
+    <td>2</td>
+    <td>x</td>
+    <td>4</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <th>Motion sensor</th>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>✓</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <th>Grove connector</th>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>✓</td>
+    <td>x</td>
+    <td>✓</td>
+  </tr>
+  </table>
   <h2>Documentação da câmera escolhida</h2>
   <h1>Definição do ambiente controlado</h1>
   <h1>Definição dos objetos</h1>
