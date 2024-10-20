@@ -25,6 +25,9 @@ A escolha do ESP32-CAM se justifica por suas características técnicas que o to
   </ul>
   </p>
   <h2>Comparação de câmeras</h2>
+  <table><tr><td>Modelo da câmera</td><td>AI-THINKER</td><td>FREENOVE WROVER</td><td>ESP-EYE</td><td>M5-CAMERA A/B</td><td>TTGO T-Plus</td><td>TTGO T-Camera
+</td><td>T-Journal</td><td>M5 ESP32-Camera</td></tr>
+  <tr><td>l2c1</td></tr></table>
   <h2>Documentação da câmera escolhida</h2>
   <h1>Definição do ambiente controlado</h1>
   <h1>Definição dos objetos</h1>
