@@ -157,7 +157,20 @@ Foram analisadas diversas opções de câmeras compatíveis com o ESP32-CAM.
 
   <h2>Documentação da câmera escolhida</h2>
   <a href="OV2640DS.pdf" download>Baixar Datasheet da OV2640</a>
+  <h2>Protocolo de comunicação</h2>
+  <p>
+  A câmera utiliza principalmente dois protocolos para sua comunicação com o ESP32: o SCCB e o DVP:
+    • SCCB: É o principal protocolo de controle da câmera. Ele é usado para configurar os parâmetros da câmera, como a resolução, o formato da imagem e outros ajustes. O protocolo SCCB utiliza linhas de dados e clock (SDA e SCL) para enviar essas informações.
+    • DVP: Essa interface é usada para transmitir os dados de imagem capturados pela câmera em forma de fluxo digital. A interface DVP utiliza sinais paralelos para enviar os dados de imagem pixel a pixel. Após configurada, a câmera começa a capturar imagens e envia os dados pela interface DVP. Esses dados são então recebidos pelo ESP32, que processa a imagem ou a armazena.
+Embora a transmissão e recepção de dados principais entre a câmera e o ESP32 ocorram através de SCCB e DVP, também utilizaremos os pinos RX e TX do ESP32 para:
+-Enviar comandos: Controlar remotamente o funcionamento do sistema, como iniciar ou parar a captura de imagens, ou mudar a resolução.
+-Receber e enviar dados processados: Se o ESP32 processar uma imagem (por exemplo, detectar um obstáculo), os resultados podem ser enviados através de RX/TX via UART para outro microcontrolador ou um computador, sem interferir nos dados de imagem.
+  </p>
   <h1>Definição do ambiente controlado</h1>
+  <p>
+  O ambiente deve ser definido de acordo com os parametros
+
+  </p>
   <h1>Definição dos objetos</h1>
   <h1>Parâmetros de distância</h1>
   <h1>Modelo computacional</h1>
