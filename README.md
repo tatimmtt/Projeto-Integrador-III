@@ -183,9 +183,6 @@ Treinamento do modelo: Faremos o upload desses imagem em uma plataforma para tre
 Utilizar o modelo  ESP32: Carregue o modelo treinado no ESP32 e após isso quando a câmera estiver streamando a imagem O ESP32 conseguirá identificar que há um objeto no campo de visão da câmera e o que seria esse objeto.
 
   </p>
-  <h1>Definição dos objetos</h1>
-  <h1>Parâmetros de distância</h1>
-  <h1>Modelo computacional</h1>
   <h1>Diagram de blocos</h1>
   <a href="imagens/bloco.png" download>Diagrama de blocos</a>
   
