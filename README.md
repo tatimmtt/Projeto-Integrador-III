@@ -187,5 +187,5 @@ Utilizar o modelo  ESP32: Carregue o modelo treinado no ESP32 e após isso quand
   <h1>Parâmetros de distância</h1>
   <h1>Modelo computacional</h1>
   <h1>Diagram de blocos</h1>
-  <a href="imagens/bloco.pngf" download>Diagrama de blocos</a>
+  <a href="imagens/bloco.png" download>Diagrama de blocos</a>
   
