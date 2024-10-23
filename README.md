@@ -174,13 +174,14 @@ Foram analisadas diversas opções de câmeras compatíveis com o ESP32-CAM.
    <li>API HTTP: O protocolo HTTP será utilizado para realizar a requisição do stream de vídeo, que será processado no código Python. Após a recepção do stream, o código realizará o tratamento da imagem, aplicando técnicas de visão computacional para identificar objetos e estimar a distância, classificando-os como próximos, médios ou distantes. </li>
   </ul>
   </p>
-  <h1>Definição do ambiente controlado</h1>
-  <p>
-  O ambiente deve ser definido de acordo com os parametros
-
-  </p>
   <h1>Detecção de objetos</h1>
   <p>
+   Para realizar a detecção de objetos usando uma câmera OV2640 e um ESP32 com um banco de dados de imagens, iremos treinar um modelo de detecção de objetos rotulados (utilizando ferramentas como o EDGE IMPULSE) e, em seguida, usaremos esse modelo no ESP32 utilizando uma biblioteca apropriada.	O passo a passo que pretendemos seguir está explicado abaixo
+Coleta de dados: Capture imagens de objetos usando a OV2640.
+Rotular as Imagens: Definir qual seria o nome de cada objeto
+Treinamento do modelo: Faremos o upload desses imagem em uma plataforma para treinar um modelo baseado nas imagens rotuladas.
+Utilizar o modelo  ESP32: Carregue o modelo treinado no ESP32 e após isso quando a câmera estiver streamando a imagem O ESP32 conseguirá identificar que há um objeto no campo de visão da câmera e o que seria esse objeto.![image](https://github.com/user-attachments/assets/353da1e9-3ca0-4549-967a-77a53a07c50c)
+
   </p>
   <h1>Definição dos objetos</h1>
   <h1>Parâmetros de distância</h1>
