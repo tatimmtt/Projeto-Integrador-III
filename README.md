@@ -187,4 +187,5 @@ Utilizar o modelo  ESP32: Carregue o modelo treinado no ESP32 e após isso quand
   <h1>Parâmetros de distância</h1>
   <h1>Modelo computacional</h1>
   <h1>Diagram de blocos</h1>
+  <a href="OV2640DS.pdf" download>Baixar Datasheet da OV2640</a>
   
