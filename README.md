@@ -180,7 +180,7 @@ Foram analisadas diversas opções de câmeras compatíveis com o ESP32-CAM.
 Coleta de dados: Capture imagens de objetos usando a OV2640.
 Rotular as Imagens: Definir qual seria o nome de cada objeto
 Treinamento do modelo: Faremos o upload desses imagem em uma plataforma para treinar um modelo baseado nas imagens rotuladas.
-Utilizar o modelo  ESP32: Carregue o modelo treinado no ESP32 e após isso quando a câmera estiver streamando a imagem O ESP32 conseguirá identificar que há um objeto no campo de visão da câmera e o que seria esse objeto.![image](https://github.com/user-attachments/assets/353da1e9-3ca0-4549-967a-77a53a07c50c)
+Utilizar o modelo  ESP32: Carregue o modelo treinado no ESP32 e após isso quando a câmera estiver streamando a imagem O ESP32 conseguirá identificar que há um objeto no campo de visão da câmera e o que seria esse objeto.
 
   </p>
   <h1>Definição dos objetos</h1>
