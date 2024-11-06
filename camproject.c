@@ -21,8 +21,8 @@
 #define PCLK_GPIO_NUM     22    // Pino de clock para os dados da imagem
 
 // Configurações de rede Wi-Fi
-const char* ssid = "SEU_SSID";       // SSID do Wi-Fi
-const char* password = "SUA_SENHA";  // Senha do Wi-Fi
+const char* ssid = "Mateus 702";       // SSID do Wi-Fi
+const char* password = "Mf@t!nv702";  // Senha do Wi-Fi
 
 // Função para configurar a câmera com as especificações de hardware
 void setupCamera() {
