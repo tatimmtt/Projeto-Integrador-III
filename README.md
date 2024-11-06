@@ -185,4 +185,25 @@ Utilizar o modelo  ESP32: Carregue o modelo treinado no ESP32 e após isso quand
   </p>
   <h1>Diagram de blocos</h1>
   <a href="imagens/bloco.png" download>Diagrama de blocos</a>
+
+
+
+  <h1>Entrega 2</h1>
+  <h2>Escolha de uma biblioteca adequada para a comunicação entre a câmera e o ESP32-CAM</h2>
+  <h3>esp_camera.h</h3>
+  <p>
+   A escolha da biblioteca esp_camera.h para este projeto se fundamenta na necessidade de configurar e controlar a câmera do módulo ESP32-CAM de maneira eficiente e prática. Abaixo estão descritos os principais motivos que justificam sua utilização:
+<ul>
+  <li>Interface Direta com o Sensor de Imagem:A biblioteca esp_camera.h oferece uma interface direta com o sensor OV2640, amplamente utilizado no módulo ESP32-CAM. Com ela, é possível configurar parâmetros como resolução, brilho, contraste e saturação da imagem, elementos essenciais para capturar fotos e vídeos com qualidade ajustada às necessidades do projeto. Além de diminuir a complexidade do projeto uma vez que reduz significativamente o esforço de programação ao abstrair a complexidade da comunicação direta com o sensor OV2640. Sem essa biblioteca, o desenvolvedor precisaria programar toda a interface de comunicação com o sensor, o que demandaria maior conhecimento técnico e aumentaria o tempo de desenvolvimento.</li>
+  <li>Facilidade de Configuração: Essa biblioteca permite configurar a câmera de maneira simplificada por meio de uma estrutura de dados (camera_config_t). Nessa estrutura, são definidos os pinos de conexão, a resolução e o formato da imagem, entre outros parâmetros. Sem o uso da esp_camera.h, seria necessário um código significativamente mais complexo para ajustar todos esses aspectos manualmente.</li>
+  <li>Captura de Imagens Otimizada: A esp_camera.h possui funções específicas para capturar imagens e gerenciar o formato dos dados, como JPEG ou RGB565, o que facilita a adaptação da imagem capturada para diferentes tipos de uso no projeto. A função esp_camera_fb_get() possibilita a obtenção do frame buffer da câmera (ou seja, o conteúdo da imagem), de forma otimizada para processamento em tempo real, essencial para aplicações de monitoramento e visão computacional. </li >
+  <li>Eficiência em Memória e Processamento: A biblioteca foi desenvolvida com foco na arquitetura do ESP32, que possui limitações de memória e processamento. Assim, o uso da esp_camera.h permite capturar e manipular imagens sem comprometer a estabilidade e o desempenho do sistema, otimizando o uso dos recursos disponíveis.</li>
+  <li>Integração com Funcionalidades do ESP32:Além da captura de imagens, a esp_camera.h facilita a integração com outras funcionalidades do ESP32, como o Wi-Fi, permitindo enviar as imagens capturadas por protocolos HTTP ou por streaming. Esse recurso é particularmente útil em projetos de monitoramento remoto, nos quais o ESP32-CAM pode atuar como uma câmera IP. </li>
+ <li> </li>
+  </ul>
+
+
+
+
+
   
