@@ -224,7 +224,7 @@ Essas resoluções proporcionam o detalhamento necessário sem comprometer signi
 </ul>
 </p>
 <h2> Implementação do código para capturar as imagens da câmera em tempo real</h2>
- <a href="OV2640DS.pdf" download>Código captura das imagens OV2640</a>
+ <a href="camproject.c" download>Código captura das imagens OV2640</a>
 
 
 
