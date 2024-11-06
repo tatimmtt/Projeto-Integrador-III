@@ -203,6 +203,29 @@ Utilizar o modelo  ESP32: Carregue o modelo treinado no ESP32 e após isso quand
   </ul>
 
 </p>
+<h2>Definições das configurações e parâmetros da câmera</h2>
+<h3>Resolução</h3>
+<p>
+ Em testes com a câmera foi analisado que a resolução pode ser SVGA(800x600) ou XVGA(1024x768) sendo que:
+ <ul>
+  <li>SVGA (800x600): Fornece detalhes suficientes para detectar objetos de tamanho médio a curta e média distância, enquanto mantém um equilíbrio entre qualidade e tempo de processamento.</li>
+  <li>XGA (1024x768): Adequado para uma melhor precisão na detecção de objetos e estimativas de distância, especialmente se o ESP32-CAM estiver monitorando alvos em movimento ou objetos pequenos.
+Essas resoluções proporcionam o detalhamento necessário sem comprometer significativamente a taxa de processamento e a capacidade de transmissão de dados.</li>
+ </ul>
+
+</p>
+<h2> Taxa de Quadro (FPS)</h2>
+<p>
+ Em testes com a câmera foi a considerado as taxas de quadro 15FPS e 10 FPS as melhores de rendimento, considerando a requisição http:
+
+<ul>
+ <li>10 FPS: Para aplicações onde os objetos se movem lentamente ou são estáticos, como detecção de forma e posição.</li>
+ <li>15 FPS: Para objetos em movimento moderado ou rápido, permitindo um monitoramento mais dinâmico e precisão na estimativa de distância.</li>
+</ul>
+</p>
+<h2> Implementação do código para capturar as imagens da câmera em tempo real</h2>
+ <a href="OV2640DS.pdf" download>Baixar Datasheet da OV2640</a>
+
 
 
 
