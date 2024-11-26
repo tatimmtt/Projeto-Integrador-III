@@ -231,7 +231,7 @@ Essas resoluções proporcionam o detalhamento necessário sem comprometer signi
   <h2> Mudança de escopo </h2>
   <p>Após testes, foi identificado que a câmera OV2640 apresentou problemas de fragilidade, sendo necessário redefinir a arquitetura do projeto. Optou-se por utilizar a câmera Speed Dome iCSee, caracterizada por sua robustez (IP67 e IK10), garantindo maior durabilidade e facilidade de implementação.</p>
   <h2>Nova arquitetura</h2>
-  <img src= "2pi3arquitetura-diagram.drawio.png" alt = "aruitetura">
+  <img src= "imagens/2pi3arquitetura-diagram.drawio.png" alt = "aruitetura">
   <h2>Diagrama de tempo</h2>
 
   <p>Descrição Detalhada do Fluxo de Processamento
@@ -301,7 +301,7 @@ Transmitir dados para outro sistema.
 
 Segue a imagem do diagrama de tempo:</p>
 
-  <img src = "diagrama-tempo-pi3.drawio.png" alt = "Diagrama de tempo">
+  <img src = "imagens/diagrama-tempo-pi3.drawio.png" alt = "Diagrama de tempo">
 
   <h2>Código para requisitar a imagem da câmera</h2>
   <p></p>
