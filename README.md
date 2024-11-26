@@ -301,7 +301,7 @@ Transmitir dados para outro sistema.
 
 Segue a imagem do diagrama de tempo:</p>
 
-  <img src = "diagrama-tempo-pi3.jpg" alt = "Diagrama de tempo">
+  <img src = "diagrama-tempo-pi3.drawio.png" alt = "Diagrama de tempo">
 
   <h2>Código para requisitar a imagem da câmera</h2>
   <p></p>
