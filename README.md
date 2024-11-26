@@ -231,4 +231,4 @@ Essas resoluções proporcionam o detalhamento necessário sem comprometer signi
   <h2> Mudança de escopo </h2>
   <p>Após testes, foi identificado que a câmera OV2640 apresentou problemas de fragilidade, sendo necessário redefinir a arquitetura do projeto. Optou-se por utilizar a câmera Speed Dome iCSee, caracterizada por sua robustez (IP67 e IK10), garantindo maior durabilidade e facilidade de implementação.</p>
   <h2>Nova arquitetura</h2>
-  <img src="pi3arquitetura-diagram.drawio.png" alt="Arquitetura">
+  <img src= "pi3arquitetura-diagram.drawio.png" alt = "aruitetura">
