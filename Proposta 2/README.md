@@ -88,5 +88,5 @@ Segue a imagem do diagrama de tempo:</p>
   <img src = "imagens/diagrama-tempo-pi3.drawio2.png" alt = "Diagrama de tempo">
 
   <h2>Código para requisitar a imagem da câmera</h2>
-  <p></p>
-  <h2>Código opencv para identificar objetos e calcular a distância</h2>
+  <p>Acesse o códgio para requisitar a imagem da câmera pelo protocolo RTSP tratar a imagem com Opencv para identificar o objeto no:<a href="codigos/pythonserver/main.py"> link </a></p>
+
