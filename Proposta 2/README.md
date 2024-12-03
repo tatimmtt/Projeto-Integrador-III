@@ -1,30 +1,42 @@
 
-  <h1>Entrega 3</h1>
-  <h2> Mudança de escopo </h2>
-  <p>Após testes, foi identificado que a câmera OV2640 apresentou problemas de fragilidade, sendo necessário redefinir a arquitetura do projeto. Optou-se por utilizar a câmera Speed Dome iCSee, caracterizada por sua robustez (IP67 e IK10), garantindo maior durabilidade e facilidade de implementação.</p>
+  <h1> Mudança de escopo </h1>
+  <p>Após os testes iniciais, foi identificado que a câmera OV2640 apresentou problemas estruturais que comprometem sua durabilidade e confiabilidade. Assim, optou-se por alterar a arquitetura do projeto, adotando a câmera Speed Dome iCSee, que possui certificações IP67 (resistência à água e poeira) e IK10 (resistência a impactos). Essa câmera foi escolhida por sua robustez e por simplificar a integração com o servidor utilizando o protocolo RTSP.</p>
   <h2>Nova arquitetura</h2>
-  <img src= "imagens/2pi3arquitetura-diagram.drawio.png" alt = "aruitetura">
+  <p>A nova arquitetura integra os seguintes elementos:
+
+1. Câmera Speed Dome iCSee: Captura os frames de vídeo e transmite para o servidor via RTSP.
+2. Servidor Central (C++): Processa os frames utilizando a biblioteca OpenCV, identifica objetos e calcula a distância.
+3. ESP32: Recebe os dados processados do servidor via HTTP e executa ações baseadas nesses parâmetros.
+A nova arquitetura está representada no diagrama abaixo:
+
+</p>
+  <img src= "imagens/pi3arquitetura-diagram.drawio.png" alt = "aruitetura">
   <h2>Diagrama de tempo</h2>
 
-  <p>Descrição Detalhada do Fluxo de Processamento
+  <p>O fluxo de processamento detalhado é descrito abaixo:
 
-Etapa 1: Captura de Vídeo pela Câmera
-Evento: A câmera inicia a captura de vídeo.
-Ação: Os frames capturados são enviados ao servidor utilizando o protocolo RTSP.
+<b>Etapa 1:</b> A câmera inicia a captura do vídeo e transmite os frames para o servidor por meio do protocolo RTSP.
 
 
-Etapa 2: Processamento no Servidor
-Recepção dos Dados:
+<b>Etapa 2:</b> Processamento no Servidor
 
-O servidor recebe os frames transmitidos pela câmera via RTSP.
-Este processo inicia no momento em que o frame é transmitido.
+Recepção dos Dados: O servidor, implementado em C++, recebe os frames enviados pela câmera.
 
-Processamento dos Frames: 
-O servidor, utilizando a biblioteca OpenCV, processa o vídeo para:
-Identificar objetos relevantes no frame.
-Calcular a distância dos objetos identificados.
 
-Etapa 3: Envio do Parâmetro ao ESP32: 
+Análise e Cálculo: Usando a biblioteca OpenCV, o servidor realiza as seguintes operações:
+<ul>
+<li>Identificação de objetos relevantes nos frames.</li>
+<li>Cálculo da distância entre a câmera e os objetos detectados.</li>
+</ul>
+
+
+
+
+
+
+<b>Etapa 3:</b> Envio do Parâmetro ao ESP32: 
+
+
 O servidor transmite o parâmetro de distância calculado para o ESP32 via protocolo HTTP.
 
 Recepção do Parâmetro:
@@ -73,7 +85,7 @@ Transmitir dados para outro sistema.
 
 Segue a imagem do diagrama de tempo:</p>
 
-  <img src = "imagens/diagrama-tempo-pi3.drawio.png" alt = "Diagrama de tempo">
+  <img src = "imagens/diagrama-tempo-pi3.drawio2.png" alt = "Diagrama de tempo">
 
   <h2>Código para requisitar a imagem da câmera</h2>
   <p></p>
