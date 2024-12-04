@@ -21,7 +21,7 @@ A nova arquitetura está representada no diagrama abaixo:
 
 <b>Etapa 2:</b> Processamento no Servidor
 
-Recepção dos Dados: O servidor, implementado em C++, recebe os frames enviados pela câmera.
+Recepção dos Dados: O servidor, recebe os frames enviados pela câmera.
 
 
 Análise e Cálculo: Usando a biblioteca OpenCV, o servidor realiza as seguintes operações:
